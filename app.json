@@ -15,12 +15,21 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.miaplicacion.app",
+      "infoPlist": {
+        "NSDocumentsFolderUsageDescription": "Permite acceder a la carpeta de documentos.",
+        "NSPhotoLibraryAddUsageDescription": "Permite guardar imágenes en la biblioteca de fotos.",
+        "NSCameraUsageDescription": "Permite acceder a la cámara y tomar fotos.",
+        "NSMicrophoneUsageDescription": "Permite acceder al micrófono para grabar audio.",
+        "NSPhotoLibraryUsageDescription": "Permite acceder a la biblioteca de fotos del dispositivo."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#ffffff",
+        "package": "com.miaplicacion.app",
+      "permissions": []
       }
     },
     "web": {
